@@ -15,6 +15,10 @@
 		85631D341D52E96400546FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85631D321D52E96400546FB3 /* LaunchScreen.storyboard */; };
 		85631D3F1D52E96400546FB3 /* StrategyPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85631D3E1D52E96400546FB3 /* StrategyPatternTests.m */; };
 		85631D4A1D52E96400546FB3 /* StrategyPatternUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85631D491D52E96400546FB3 /* StrategyPatternUITests.m */; };
+		85631D591D52EA1500546FB3 /* CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = 85631D581D52EA1500546FB3 /* CustomField.m */; };
+		85631D5C1D52EB1900546FB3 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 85631D5B1D52EB1900546FB3 /* InputValidator.m */; };
+		85631D601D52ED8800546FB3 /* PhoneNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 85631D5F1D52ED8800546FB3 /* PhoneNumberValidator.m */; };
+		85631D631D52ED9E00546FB3 /* EmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 85631D621D52ED9E00546FB3 /* EmailValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		85631D451D52E96400546FB3 /* StrategyPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85631D491D52E96400546FB3 /* StrategyPatternUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyPatternUITests.m; sourceTree = "<group>"; };
 		85631D4B1D52E96400546FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85631D571D52EA1500546FB3 /* CustomField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomField.h; sourceTree = "<group>"; };
+		85631D581D52EA1500546FB3 /* CustomField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomField.m; sourceTree = "<group>"; };
+		85631D5A1D52EB1900546FB3 /* InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		85631D5B1D52EB1900546FB3 /* InputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		85631D5E1D52ED8800546FB3 /* PhoneNumberValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNumberValidator.h; sourceTree = "<group>"; };
+		85631D5F1D52ED8800546FB3 /* PhoneNumberValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberValidator.m; sourceTree = "<group>"; };
+		85631D611D52ED9E00546FB3 /* EmailValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailValidator.h; sourceTree = "<group>"; };
+		85631D621D52ED9E00546FB3 /* EmailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,9 @@
 		85631D231D52E96400546FB3 /* StrategyPattern */ = {
 			isa = PBXGroup;
 			children = (
+				85631D5D1D52ED4E00546FB3 /* StrategyGroup */,
+				85631D571D52EA1500546FB3 /* CustomField.h */,
+				85631D581D52EA1500546FB3 /* CustomField.m */,
 				85631D271D52E96400546FB3 /* AppDelegate.h */,
 				85631D281D52E96400546FB3 /* AppDelegate.m */,
 				85631D2A1D52E96400546FB3 /* ViewController.h */,
@@ -138,6 +153,19 @@
 				85631D4B1D52E96400546FB3 /* Info.plist */,
 			);
 			path = StrategyPatternUITests;
+			sourceTree = "<group>";
+		};
+		85631D5D1D52ED4E00546FB3 /* StrategyGroup */ = {
+			isa = PBXGroup;
+			children = (
+				85631D5A1D52EB1900546FB3 /* InputValidator.h */,
+				85631D5B1D52EB1900546FB3 /* InputValidator.m */,
+				85631D5E1D52ED8800546FB3 /* PhoneNumberValidator.h */,
+				85631D5F1D52ED8800546FB3 /* PhoneNumberValidator.m */,
+				85631D611D52ED9E00546FB3 /* EmailValidator.h */,
+				85631D621D52ED9E00546FB3 /* EmailValidator.m */,
+			);
+			name = StrategyGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +300,11 @@
 			files = (
 				85631D2C1D52E96400546FB3 /* ViewController.m in Sources */,
 				85631D291D52E96400546FB3 /* AppDelegate.m in Sources */,
+				85631D601D52ED8800546FB3 /* PhoneNumberValidator.m in Sources */,
 				85631D261D52E96400546FB3 /* main.m in Sources */,
+				85631D631D52ED9E00546FB3 /* EmailValidator.m in Sources */,
+				85631D591D52EA1500546FB3 /* CustomField.m in Sources */,
+				85631D5C1D52EB1900546FB3 /* InputValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
